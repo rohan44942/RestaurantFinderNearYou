@@ -25,6 +25,7 @@ router.post("/analyze-food", async (req, res) => {
   try {
     // Dynamically construct the image path based on the uploads directory
     const imagePath = path.join(__dirname, "..", filePath);
+    
     console.log(imagePath);
     if (!fs.existsSync(imagePath)) {
       return res.status(404).json({ message: "Image file not found." });
