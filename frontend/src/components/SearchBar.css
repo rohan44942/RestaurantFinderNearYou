@@ -1,0 +1,65 @@
+/* Container for the search bar */
+.search-bar-container {
+    display: flex;
+    flex-direction: column;  /* Align items vertically */
+    align-items: center;  /* Center items horizontally */
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;  /* Limit the width of the form */
+    margin: 20px auto;  /* Center the form on the page */
+    background-color: #f9f9f9;  /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Styling for the input fields */
+  .search-bar-container input {
+    width: 100%;  /* Full width of container */
+    padding: 12px;  /* Add padding for better readability */
+    margin: 10px 0;  /* Space between inputs */
+    font-size: 16px;
+    border: 1px solid #ddd;  /* Subtle border */
+    border-radius: 4px;
+    box-sizing: border-box;  /* Include padding within width */
+    transition: border-color 0.3s ease;  /* Smooth border on focus */
+  }
+  
+  /* Change border color on focus */
+  .search-bar-container input:focus {
+    border-color: #007bff;
+    outline: none;  /* Remove default outline */
+  }
+  
+  /* Button styling */
+  .search-bar-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;  /* Space above the button */
+    width: 100%;  /* Full width button */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .search-bar-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Disabled button styling */
+  .search-bar-container button:disabled {
+    background-color: #cccccc;  /* Lighter color for disabled state */
+    cursor: not-allowed;  /* Show "not-allowed" cursor */
+  }
+  
+  /* Loading and error message styles */
+  .loading, .error {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

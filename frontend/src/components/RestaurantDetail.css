@@ -1,0 +1,55 @@
+/* Container for the restaurant detail page */
+.restaurant-detail-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the restaurant name */
+.restaurant-detail-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Styling for details sections */
+.restaurant-detail-container p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #666;
+}
+
+.restaurant-detail-container p strong {
+  color: #333;
+}
+
+/* Styling for the restaurant image */
+.restaurant-detail-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Handling no restaurant found state */
+.restaurant-detail-container .no-restaurant {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Error and loading styles */
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}

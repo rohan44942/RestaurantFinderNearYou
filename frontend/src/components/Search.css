@@ -1,0 +1,82 @@
+/* Search.css */
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar-container label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.search-bar-container input,
+.search-bar-container button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.restaurant-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.02);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 15px;
+}
+
+.restaurant-name {
+  font-size: 1.5em;
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.restaurant-name:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.restaurant-description,
+.restaurant-cuisine {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
